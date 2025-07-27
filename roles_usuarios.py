@@ -35,9 +35,9 @@ class Colaborador(Usuario):
         cursor = conn.cursor()
         try:
             cursor.execute("""
-                INSERT INTO afiliados (nombre, apellido, domicilio, celular, seccion, municipio, promotor_id)
-                VALUES (%s, %s, %s, %s, %s, %s, %s)
-            """, (nombre, apellido, domicilio, celular, seccion, municipio, promotor_id))
+                INSERT INTO afiliados (nombre, apellido, domicilio, celular, seccion, municipio, promotor_id, usuario_id)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+            """, (nombre, apellido, domicilio, celular, seccion, municipio, promotor_id, self.usuario_id))
             conn.commit()
             st.success("Afiliado registrado correctamente.")
         except Exception as e:
@@ -53,7 +53,7 @@ class Colaborador(Usuario):
             return []
         cursor = conn.cursor()
         try:
-            cursor.execute("SELECT * FROM afiliados WHERE promotor_id = %s ORDER BY afiliado_id DESC", (self.usuario_id,))
+            cursor.execute("SELECT * FROM afiliados WHERE usuario_id = %s ORDER BY afiliado_id DESC", (self.usuario_id,))
             resultados = cursor.fetchall()
             return resultados
         except Exception as e:

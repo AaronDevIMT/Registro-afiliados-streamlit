@@ -31,7 +31,8 @@ CREATE TABLE IF NOT EXISTS afiliados (
     celular TEXT,
     seccion TEXT NOT NULL,
     municipio TEXT,
-    promotor_id INTEGER REFERENCES promotores(promotor_id)
+    promotor_id INTEGER REFERENCES promotores(promotor_id),
+    usuario_id INTEGER REFERENCES usuarios(usuario_id)
 );
 
 -- Tabla de reuniones
