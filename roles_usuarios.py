@@ -53,7 +53,12 @@ class Colaborador(Usuario):
             return []
         cursor = conn.cursor()
         try:
-            cursor.execute("SELECT * FROM afiliados WHERE usuario_id = %s ORDER BY afiliado_id DESC", (self.usuario_id,))
+            cursor.execute("""
+                SELECT afiliado_id, nombre, apellido, domicilio, celular, seccion, municipio, promotor_id
+                FROM afiliados
+                WHERE usuario_id = %s
+                ORDER BY afiliado_id DESC
+            """, (self.usuario_id,))
             resultados = cursor.fetchall()
             return resultados
         except Exception as e:
