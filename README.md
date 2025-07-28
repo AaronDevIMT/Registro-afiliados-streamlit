@@ -1,6 +1,6 @@
 # 📋 Registro de Afiliados – Streamlit App
 
-![Captura de la app](assets/preview.png)
+![Captura de la app](assets/preview.gif)
 
 Aplicación web desarrollada con **Python + Streamlit + PostgreSQL** que permite a promotores gestionar registros de afiliados de manera intuitiva, rápida y desde cualquier dispositivo. Esta herramienta fue diseñada con el objetivo de modernizar procesos de afiliación manual y facilitar el control de datos de manera descentralizada pero segura.
 
