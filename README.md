@@ -87,12 +87,14 @@ Este proyecto fue una oportunidad para aplicar y consolidar conocimientos sobre:
 <p align="center">
   <strong>Aarón Águilar May</strong>  
   <br><br>
-  [![Email](https://img.shields.io/badge/Email-aaron.agm02%40gmail.com-red?logo=gmail&logoColor=white)](mailto:aaron.agm02@gmail.com)  
-  📧 **Copiar y pegar:** `aaron.agm02@gmail.com`  
+  <a href="mailto:aaron.agm02@gmail.com">
+    <img src="https://img.shields.io/badge/Email-aaron.agm02%40gmail.com-red?logo=gmail&logoColor=white" alt="Email"/>
+  </a>  
+  <br>
+  📧 <strong>Copiar y pegar:</strong> `aaron.agm02@gmail.com`  
   <br><br>
   🐙 <a href="https://github.com/AaronDevIMT">GitHub – AaronDevIMT</a>  
 </p>
-
 ---
 
 ## 🧾 Licencia
