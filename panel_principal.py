@@ -77,7 +77,7 @@ def mostrar_panel(usuario):
     elif seleccion == "Ver todos los afiliados" and isinstance(usuario, Admin):
         afiliados = usuario.ver_todos_afiliados()
         if afiliados:
-            df = pd.DataFrame(afiliados, columns=["ID", "Nombre", "Apellido", "Domicilio", "Celular", "Sección", "Municipio", "Promotor ID"])
+            df = pd.DataFrame(afiliados, columns=["ID", "Nombre", "Apellido", "Domicilio", "Celular", "Sección", "Municipio", "Promotor ID", "Usuario ID"])
             st.dataframe(df[["ID", "Nombre", "Apellido", "Domicilio", "Celular", "Sección", "Municipio"]], use_container_width=True, hide_index=True)
         else:
             st.info("No hay afiliados registrados.")
